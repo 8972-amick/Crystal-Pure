@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(214, 180, 103, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #D6B467;
+    transform: translateY(-2px);
+}
+
+/* Main Section */
+main {
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #D6B467 0%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+main h2 {
+    font-size: 36px;
+    margin: 40px 0 30px 0;
+    color: #D6B467;
+}
+
+/* Screenshot Section Styling */
+.screenshots {
+    margin-bottom: 60px;
+}
+
+.screenshots h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.screenshot {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
+    border: 1px solid rgba(214, 180, 103, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+
+.screenshot:hover {
+    border-color: #D6B467;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(214, 180, 103, 0.2);
+}
+
+.screenshot img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(214, 180, 103, 0.3);
+}
+
+.screenshot img:hover {
+    border-color: #D6B467;
+    transform: scale(1.05);
+}
+
+.screenshot p {
+    color: #D6B467;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Comparison Table Styling */
+.comparison-table {
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(214, 180, 103, 0.2);
+    overflow-x: auto;
+}
+
+.comparison-table h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: linear-gradient(135deg, rgba(214, 180, 103, 0.2) 0%, rgba(214, 180, 103, 0.1) 100%);
+    color: #D6B467;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid rgba(214, 180, 103, 0.3);
+}
+
+td {
+    padding: 14px 16px;
+    border: 1px solid rgba(214, 180, 103, 0.2);
+    text-align: center;
+    color: #c0c0c0;
+    transition: all 0.3s ease;
+}
+
+tr:hover td {
+    background-color: rgba(214, 180, 103, 0.05);
+    color: #D6B467;
+}
+
+/* Analysis Styling */
+.analysis {
+    background: linear-gradient(135deg, rgba(30, 30, 30, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(214, 180, 103, 0.2);
+    margin-bottom: 40px;
+}
+
+.analysis h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #D6B467;
+}
+
+.analysis p {
+    color: #c0c0c0;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.analysis ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.analysis li {
+    color: #c0c0c0;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.analysis li:before {
+    content: "• ";
+    color: #D6B467;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Toggle Button Styling */
+button {
+    background: linear-gradient(135deg, #D6B467 0%, #FFD700 100%);
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    margin: 20px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(214, 180, 103, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #a8a8a8;
+    border-top: 1px solid rgba(214, 180, 103, 0.2);
+    font-size: 14px;
+    margin-top: 80px;
+}
+
+/* Hide the analysis section */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    header nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    main h1 {
+        font-size: 32px;
+    }
+
+    main h2 {
+        font-size: 26px;
+        margin: 30px 0 20px 0;
+    }
+
+    .screenshot-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .comparison-table {
+        padding: 20px;
+        margin-bottom: 40px;
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .analysis {
+        padding: 20px;
+    }
+
+    .analysis h2 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}

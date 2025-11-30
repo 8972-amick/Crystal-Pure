@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="images2/logoTransparent.png">
+    <script src="https://kit.fontawesome.com/b125d720ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    /*price styling*/  
+
+.product-price {
+font-size: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+
+}
+
+.discount-price {
+  font-size: 18px;
+  color: rgb(16, 4, 4)
+}
+
+.discount-percent {
+  font-size: 14px;
+  background-color: green;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.cart-button {
+ 
+  background-color: green;
+  color: yellow;
+  font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <section>
+
+        <header>
+
+            <span>Crystal & Pure</span>
+
+            <div>
+                <button onclick="navigateTo('home')">Home</button>
+                <button onclick="navigateTo('blog')">Blog</button>
+                <button onclick="navigateTo('product')">Product</button>
+                <button onclick="navigateTo('about')">About Us</button>
+                <button onclick="navigateTo('research')">Research</button>
+            </div>
+
+            <div id="nav_right">
+
+                <i class="fa-solid fa-user"></i>
+
+
+            </div>
+        </header>
+
+    </section>
+
+
+    <section id="main_container_section">
+
+        <div class="container">
+            
+            <div class="boxs">
+                <img src="./images2/Binbond.jpg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">BinBond</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                    <p align="cent.er">Add to cart</p>
+                  </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/citizen.jpeg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Citizen</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$4000</span>
+                  <span class="discount-price">$3800</span>
+                  <span class="discount-percent">10% off </span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/Latest  Rolex Watches.jpg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rolex</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/megalith.jpeg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Megalith</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/olevs quartz.jpg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Olevs</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/oyster perprtual.jpeg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Oyster perprtual</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/tissot nordstorm.jpg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Tissot Nordstorm</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/rolex sea dweller.jpeg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rolex Sea Dweller</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/rolex.jpg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rolex Skydweller</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/steel quartz.jpeg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Steel Quartz</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5500</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">15% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/Latest  Rolex Watches.jpg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rado</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/tissot1.png" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Citizen classy</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/tissot2.png" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Tissot Classic</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/T129-410-11-013-00_shadow.png" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rolex</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/tissot dream swissmatic.png" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Dream Swissmatic</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$3000</span>
+                  <span class="discount-price">$2800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/tissot pr516.png" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Tissot PR516</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/tissot pro 100.png" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Tissot</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$4000</span>
+                  <span class="discount-price">$3800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/oyster perprtual.jpeg" alt="image.jpg" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Oyster Perpetual</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">15% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/rolex.jpg" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rolex</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                 <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/olevs quartz.jpg" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Rolex</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/bvlgari.webp" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Bvlgari</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$7000</span>
+                  <span class="discount-price">$6800</span>
+                  <span class="discount-percent">15% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/cartier pasha de cartier.webp" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Cartier</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/frankmuller.jpeg" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Franck Muller</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/WSPA0046-700 cartier.webp" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Carier Web</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$6000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">20% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="./images2/omegaseamasterdrive.webp" alt="Product Image" class="product-image">
+                <i class="fa fa-heart-o" onclick="changeColor(this)"></i>
+                <h2 class="product-name" align="center">Omega Sea Master</h2>
+                <p class="product-description">This is a brief description of the product.</p>
+                <p class="product-description">It highlights the key features and uses</p>
+                <div class="product-price">
+                  <span class="original-price">$5000</span>
+                  <span class="discount-price">$4800</span>
+                  <span class="discount-percent">10% off</span>
+                </div>
+                <div class="cart-button">
+                  <p align="center">Add to cart</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+
+
+
+    <section>
+
+    <footer>
+        <ul>
+            <h1>Company</h1>
+            <li>About Us</li>
+            <li>Our services</li>
+            <li>Privacy policy</li>
+            <li>Branches</li>
+        </ul>
+
+        <ul>
+            <h1>Get Help</h1>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Order Status</li>
+            <li>Payments</li>
+        </ul>
+
+        <ul>
+            <h1>Online shopping</h1>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Baby</li>
+            <li>Accessories</li>
+            <li>Topic</li>
+        </ul>
+
+        <ul>
+            <h1>Follow us</h1>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </ul>
+
+    </footer>
+
+    </section>
+
+    <div class="copyright">
+        <p> &copy; 2025 Crystal & Pure. All Rights Reserved.</p>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>
