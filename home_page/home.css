@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}   
+
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #000000; /* Natural Black  #07000B*/
+    color: white; /* #D6B467 */
+    overflow-x: hidden;
+    cursor:pointer;
+}
+
+
+/* Loader CSS */
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: white;
+}
+
+h4{
+    font-family: "Josefin Sans", serif;
+}
+
+
+  /* font-family: 'Poppins', sans-serif; */
+
+
+
+/* BG video  */
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+  }
+
+  .video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .content {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  #bg{
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* position: relative; */
+    z-index: 0;
+
+  }
+
+  /* Sign up pop up CSS */
+
+  .sign_up_pop_up {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    color: black;
+    z-index: 10000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 0px 5px white;
+  }
+
+  .sign_up_pop_up .sign_up_left {
+    /* flex: 1; */
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+  }
+
+  .sign_up_pop_up .sign_up_left h2 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vw;
+}
+
+.sign_up_pop_up .sign_up_left p {
+    font-size: 1vw;
+}
+
+.sign_up_pop_up .sign_up_left form{
+  margin-top: 1vh;
+  height: auto;
+}
+
+.sign_up_pop_up .sign_up_left form label {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9vw;
+    font-weight: 500;
+    margin-bottom: -1vw;
+}
+
+.sign_up_pop_up .sign_up_left form input {
+    height: 5vh;
+    width: 85%;
+    border: 1px solid #545050;
+    border-radius: 8px;
+    padding-left: 10PX;
+}
+
+.sign_up_pop_up .sign_up_left form btn-google {
+  height: 5vh;
+  width: 85%;
+  border: 1px solid #545050;
+  border-radius: 8px;
+  color: black;
+}
+
+  .sign_up_pop_up .sign_up_left form .btn-primary {
+    height: 5vh;
+    width: 85%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 3vh;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+  }
+  
+  .sign_up_pop_up .sign_up_left form .btn-primary:hover {
+    background-color: #555;
+  }
+  
+  .sign_up_pop_up .sign_up_left form .btn-google {
+    height: 5vh;
+    width: 85%;
+    background-color: #EFF0F1;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .sign_up_pop_up .sign_up_left form .btn-google img {
+    width: 15px;
+    height: auto;
+  }
+
+  
+
+  .sign_up_pop_up .signin-text {
+    margin-top: 0.5vw;
+    text-align: center;
+    font-size: 0.8vw;
+    color: #555;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  
+  .sign_up_pop_up .signin-text a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .sign_up_pop_up .signin-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .sign_up_pop_up .sign_up_right{
+    /* flex: 1; */
+    height: 101%;
+    width: 50%;
+    background-color: black;
+    background-image: url('images/watch_bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .sign_up_pop_up i{
+    color: white;
+    margin-left: 95%;
+    margin-top: 1vw;
+    transition: 0.2s ease-in-out;
+  }
+
+  .sign_up_pop_up i:hover{
+    font-weight: 900;
+    
+  }
+
+
+
+/* Header Section CSS*/
+
+header {
+    height: 10vh;
+    width: 100vw;
+    /* background-color: transparent; */
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    transition: 0.3s ease;
+    position: fixed;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.8); Semi-transparent for better visibility */
+    z-index: 1000;
+    color: white;
+    transition: transform 0.3s ease; /* Smooth movement */
+}
+
+header div, header span {
+    display: inline-block;
+}
+
+header span {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+header div button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5vw;
+    transition:  0.3s ease-in-out;
+
+}
+
+header div button:hover {
+    color: #D6B467;
+    font-weight: bold;
+    transform: scale(1.25);
+}
+
+header div button:active{
+    transform: scale(0.5);
+}
+
+header i {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+header i:hover {
+    color: #D6B467;
+    transform: scale(1.25);
+}
+
+header i:active{
+    transform: scale(0.5);
+}
+
+
+/* discover Section CSS */
+
+#discover_section {
+    height: calc(100vh - 70vh);
+    width: 100vw;
+    margin-top: -45vh;
+    margin-left: 11vw;
+    position: relative;
+    z-index: 2;
+}
+
+#discover_section h5 {
+    font-size: 8rem;
+    font-family: "Josefin Sans", serif;
+    margin-bottom: -40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0.5px 0.5px 5px black;
+}
+
+#discover_section h6{
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer
+}
+
+
+#discover_section button {
+    margin-top: 3vh;
+    background-color: transparent;
+    height: 5vh;
+    width: 10vw;
+    border: 2px solid white;
+    border-radius: 20rem;
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.1s ease-in-out;
+    font-weight: 500;
+}
+
+#discover_section button:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-weight: 300;
+}
+
+/* Content Section */
+
+/* Scrolling */
+
+/* The container (parent) */
+.scroll-container {
+    scroll-snap-type: y mandatory; /* Enables snap scrolling vertically */
+    overflow-y: scroll;           /* Enables vertical scrolling */
+    height: 100vh;                /* Makes the container full height */
+}
+
+/* The child elements (content sections) */
+.scroll-section {
+    scroll-snap-align: start;     /* Aligns each section to the top of the container */
+    height: 100vh;                /* Each section takes the full height of the viewport */
+}
+
+.container {
+    margin-top: 17vh;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container .left {
+    flex: 1;
+    background-image: url('images/watch_bg_2.jpg'); /* Replace with your image */
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+}
+
+.container .right {
+    flex: 1;
+    background-image: url('images/watch_bg_3.jpg'); /* Replace with your image */
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+}
+
+.container .left, .container .right {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    
+}
+
+.left button,.right button {
+    margin-left: 37vw;
+    margin-top: 80vh;
+    background-color: transparent;
+    height: 5vh;
+    width: 10vw;
+    border: 2px solid white;
+    border-radius: 20rem;
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.left button:hover , .right button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Container Section 2 */
+
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container2_texts {
+    margin-top: 20vh;
+    display: inline-block;
+    align-content: center;
+    justify-items: center;
+    background-color: transparent;
+    padding: 0px 100px 0px 100px;
+}
+
+.container2 h5 {
+    font-size: 5vw;
+    font-family: "Josefin Sans", serif;
+    margin-bottom: -40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.container2 span {
+    font-size: 1vw;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer
+
+}
+
+.container2 img{
+    width: 100vw;
+    height: 100;
+    margin-top: 20vh ;
+}
+
+
+
+/* Container3 Section CSS */
+
+
+.container3_texts {
+    margin-top: 20vh;
+    display: inline-flex;
+    align-content: center;
+    justify-items: center;
+    background-color: transparent;
+    padding: 0px 100px 0px 100px;
+}
+
+.container3_texts h1 {
+    font-size: 5vw;
+    font-family: "Josefin Sans", serif;
+    margin-bottom: -40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+}
+
+.container3_texts span {
+    margin-top: 17.5vh;
+    font-size: 1vw;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer
+
+}
+
+.container3 {
+    margin-top: 25vh;
+    width: 100vw;
+    height: 60vh;
+    background-color: transparent;
+    display: flex;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Adds smooth scrolling behavior */
+}
+
+
+.container3::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+  }
+  
+  .box {
+    width: 50vw;
+    background-color: black;
+    /* border: 10px solid white; */
+    border-radius: 20px;
+    flex: 0 0 25%; /* Ensures each box takes up 25% of the container's width */
+    background-size: cover;   
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 10px;
+  }
+
+
+
+/* Footer Section */
+
+footer {
+    /* margin-top: 20vh; */
+    margin-bottom: -2.5vh;
+    height: 50vh;
+    width: 100vw;
+    background-color: #111; 
+    color: #fff; 
+    font-family: Arial, sans-serif;
+  }
+
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13vw;
+    padding: 0px 10vw 0px 10vw;
+  }  
+
+  footer ul h1 {
+    font-family: "Josefin Sans", serif;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1vw;
+    border-bottom: 2px solid #D6B467;  
+  }
+
+  footer ul li {
+    text-decoration: none;
+    list-style: none;
+    font-family: "Josefin Sans", serif;
+    font-weight: 300;
+    font-size: 1.1vw;
+    transition: 0.2s ease-in-out;
+  }
+
+  footer ul li:hover{
+    color: #D6B467;
+    font-weight: 400;
+  }
+
+  footer ul i{
+    margin-left: 0.6vw ;
+    transition: 0.2s ease-in-out;
+  }
+
+  footer ul i:hover {
+    color: #D6B467;
+  }
+
+  footer ul i:active {
+    transform: scale(1.5);
+  }
+
+  /* COPYRIGHT SECTION */
+
+  .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.1vw;
+    margin-bottom: 1vw;
+  }
+
+  .copyright p {
+    font-family: "Josefin Sans", serif;
+    font-size: 0.9vw;
+    font-weight: 300;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #search_box {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border: 1px solid white;
+  }
+
+  #search_box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  #search_box i {
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  #search_box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    width: 100px;
+  }
+
+  #search_box input::placeholder {
+    color: white;
+  } */
+
+
